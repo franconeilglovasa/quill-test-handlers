@@ -4,10 +4,14 @@ import { QuillModule } from 'ngx-quill';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { QuillTest1Component } from './quill/quill-test1/quill-test1.component';
+import { QuillTest2Component } from './quill/quill-test2/quill-test2.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    QuillTest1Component,
+    QuillTest2Component
   ],
   imports: [
     BrowserModule,

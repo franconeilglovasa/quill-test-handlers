@@ -1,0 +1,11 @@
+<div class="invisible-input-cont">
+    <input #quillFile type="file" (change)="quillFileSelected($event)">
+  </div>
+  
+<quill-editor
+  (onEditorCreated)="getEditorInstance($event)"
+
+  placeholder="Add case note here"
+  formControlName="note"
+  [style]="{height: '300px'}">
+</quill-editor>
