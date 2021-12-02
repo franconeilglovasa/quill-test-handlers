@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { QuillModule } from 'ngx-quill';
 
@@ -16,6 +17,7 @@ import { QuillTest2Component } from './quill/quill-test2/quill-test2.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     QuillModule.forRoot()
   ],
   providers: [],

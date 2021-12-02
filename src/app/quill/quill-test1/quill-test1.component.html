@@ -1,7 +1,10 @@
 <div class="invisible-input-cont">
     <input #quillFile type="file" (change)="quillFileSelected($event)">
   </div>
+
+
+  <button (click)="onInsertText()">Insert Text</button>
   
-  <quill-editor [modules]="editorModules" (onEditorCreated)="getMeEditorInstance($event)">
+  <quill-editor [modules]="editorModules" format="json" [(ngModel)]="jsonString" (onEditorCreated)="getMeEditorInstance($event)">
   
   </quill-editor>
